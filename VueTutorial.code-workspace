@@ -1,12 +1,7 @@
 {
-	"folders": [
-		{
-			"path": "."
-		}
-	],
-	"settings": {
-		"cSpell.words": [
-			"vite"
-		]
-	}
+  "folders": [
+    {
+      "path": "VueTutorial"
+    }
+  ]
 }

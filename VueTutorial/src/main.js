@@ -1,5 +1,8 @@
-import { createApp } from 'vue'
-import './style.css'
-import App from './App.vue'
+import { createApp } from "vue";
+// import your own css 
+import "./style.css";
+//* Root component
+import App from "./App.vue";
 
-createApp(App).mount('#app')
+//* This is where index.html create and mount a Vue instance.
+createApp(App).mount("#app");

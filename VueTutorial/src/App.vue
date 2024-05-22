@@ -1,20 +1,25 @@
-<script setup>
-import HelloWorld from './components/HelloWorld.vue'
-</script>
-
 <template>
+  <!-- *Remember App.vue is the root component of all. -->
   <div>
     <a href="https://vitejs.dev" target="_blank">
-      <img src="/vite.svg" class="logo" alt="Vite logo" />
+      <!-- Import img from public/ -->
+      <img src="/test/vite.svg" class="logo" alt="Vite logo" />
     </a>
     <a href="https://vuejs.org/" target="_blank">
-      <img src="./assets/vue.svg" class="logo vue" alt="Vue logo" />
+      <!-- Import img from ./src/assets/img -->
+      <img src="@img/vue.svg" class="logo vue" alt="Vue logo" />
     </a>
   </div>
-  <HelloWorld msg="Vite + Vue" />
+  <!-- Children component -->
+  <Directives></Directives>
 </template>
 
-<style scoped>
+<script setup>
+// We can import component in <script setup> and use it in <template>.
+import Directives from './components/DirectivesExample.vue'
+</script>
+
+<style lang="scss" scoped>
 .logo {
   height: 6em;
   padding: 1.5em;
