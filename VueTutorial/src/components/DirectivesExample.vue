@@ -82,7 +82,7 @@
   </div>
   <!-- dynamic arguments example -->
   <div class="border">
-    <h2>v-slot arguments example</h2>
+    <h2>dynamic arguments example</h2>
     <span v-bind:[customArgument.bind]="customArgument.bindValue">check id on DOM</span> <br>
     <button type="button" v-on:[customArgument.on]="handleClick()">Click me!</button>
   </div>
