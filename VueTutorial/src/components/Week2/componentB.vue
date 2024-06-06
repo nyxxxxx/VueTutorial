@@ -1,15 +1,13 @@
 <template>
-  <!-- Message.vue -->
   <div>
-    <span>
-      子層文字
-      <span>子層內層文字</span>
-    </span>
+    <input type="text" v-model="input">
   </div>
 </template>
 
 <script setup>
+import { ref } from 'vue';
 
+const input = ref('');
 </script>
 
 <style lang="scss" scoped>

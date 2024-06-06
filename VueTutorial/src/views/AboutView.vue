@@ -1,12 +1,13 @@
 <template>
-  <!-- HTML here -->
-  <h1>Component HTML</h1>
+  <div>
+    <h1>About Page</h1>
+  </div>
 </template>
 
 <script setup>
-// JS here
+
 </script>
 
 <style lang="scss" scoped>
-// Style here
+
 </style>

@@ -11,6 +11,11 @@ export default defineConfig({
     alias: [
       { find: '@', replacement: fileURLToPath(new URL('./src', import.meta.url))},
       { find: '@img', replacement: fileURLToPath(new URL('./src/assets/img', import.meta.url))},
+      { find: '@style', replacement: fileURLToPath(new URL('./src/assets/style', import.meta.url))},
+      { find: '@components', replacement: fileURLToPath(new URL('./src/assets/components', import.meta.url))},
     ],
+  },
+  server: {
+    host: true,
   }
 })
