@@ -32,12 +32,12 @@
     </div>
     <div class="border">
       <h3>Life hook</h3>
-      <!-- Click button will increase "counter". And "onBeforeUpdate" will trigger before rerendering the button -->
-      <button type="button" @click="counter++">{{ counter }}</button>
+      <!-- Click Button will increase "counter". And "onBeforeUpdate" will trigger before rerendering the button -->
+      <Button type="button" @click="counter++">{{ counter }}</Button>
     </div>
     <div class="border">
       <h3>build-in component : Transition</h3>
-      <button type="button" @click="show = !show">switch</button>
+      <Button type="button" @click="show = !show">switch</Button>
       <!-- If you name your transition component, your class name will change. -->
       <Transition name="bounce" enter-active-class="bounce-in" leave-active-class="bounce-out">
         <p v-if="show">Bouncing World!</p>
@@ -46,9 +46,9 @@
     <div class="border">
       <h3>build-in component : TransitionGroup</h3>
       <div>
-        <button type="button" @click="editItem('add')">add</button>
-        <button type="button" @click="editItem('remove')">remove</button>
-        <button type="button" @click="editItem('shuffle')">shuffle</button>
+        <Button type="button" @click="editItem('add')">add</Button>
+        <Button type="button" @click="editItem('remove')">remove</Button>
+        <Button type="button" @click="editItem('shuffle')">shuffle</Button>
       </div>
       <ul class="list">
       <TransitionGroup name="list">
@@ -61,7 +61,7 @@
     <div class="border">
       <h3>KeepAlive & Dynamic Component</h3>
       <h4>*Check source code to compare the difference*</h4>
-      <button type="button" @click="()=>{current = current === componentA ? componentB: componentA}">switch component</button>
+      <Button type="button" @click="()=>{current = current === componentA ? componentB: componentA}">switch component</Button>
       <!-- Only keep componentA -->
       <KeepAlive :include="['componentA']">
         <component :is="current"></component>
@@ -128,11 +128,6 @@ const editItem = (type) => {
 </script>
 
 <style lang="scss" scoped>
-.border {
-  border: 1px solid black;
-  padding: 0.5rem;
-  margin-bottom: 1.5rem;
-}
 
 .router-link-exact-active {
   color: rgb(92, 170, 137);

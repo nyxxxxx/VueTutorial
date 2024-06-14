@@ -48,6 +48,59 @@ const routes = [
     ],
   },
   {
+    path: "/week3",
+    name: "Week3",
+    component: () => import("../views/Week3View.vue"),
+    meta: {
+      title: "Week3 Example",
+    },
+    redirect: to =>{ return {name: 'CompositionAPI_Example'}},
+    children: [
+      {
+        path: "composition",
+        name: "CompositionAPI_Example",
+        component: () => import("../views/Week3/CompositionAPI_ExampleView.vue"),
+        meta: {
+          title: "CompositionAPI Example",
+        },
+      },
+      {
+        path: "passvalue",
+        name: "PassValue_Example",
+        component: () => import("../views/Week3/PassValue_ExampleView.vue"),
+        meta: {
+          title: "CompositionAPI Example",
+        },
+      },
+    ]
+  },
+  {
+    path: "/week2",
+    name: "Week2",
+    component: () => import("../views/Week2View.vue"),
+    meta: {
+      title: "Week2 Example",
+    },
+    children: [
+      {
+        path: "first",
+        name: "nested-first",
+        component: () => import("../views/Week2/ChildrenView1.vue"),
+        meta: {
+          title: "嵌套路由Example",
+        },
+      },
+      {
+        path: "second",
+        name: "nested-second",
+        component: () => import("../views/Week2/ChildrenView2.vue"),
+        meta: {
+          title: "嵌套路由Example",
+        },
+      },
+    ],
+  },
+  {
     path: "/about",
     name: "About",
     component: () => import("../views/AboutView.vue"),

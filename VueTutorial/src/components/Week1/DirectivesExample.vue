@@ -20,8 +20,8 @@
     <h2>v-on example</h2>
     <!-- You can call function with or without (). -->
     <!-- *Note: Shorthand of v-on is @ -->
-    <button v-on:click="handleClick">click</button>
-    <button @click.right="handleClick">right click</button>
+    <Button v-on:click="handleClick">click</Button>
+    <Button @click.right="handleClick">right click</Button>
   </div>
   <!-- v-show example -->
   <div class="border">
@@ -29,7 +29,7 @@
     <!-- Only add/remove "style:display:none;" -->
     <h3 v-show="showSwitch">v-show : true </h3>
     <h3 v-show="!showSwitch">v-show : false </h3>
-    <button @click="handleToggle('showSwitch')">toggle</button>
+    <Button @click="handleToggle('showSwitch')">toggle</Button>
   </div>
   <!-- v-if example -->
   <div class="border">
@@ -40,7 +40,7 @@
     <h3 v-if="counter % 3 == 0">v-if</h3>
     <h3 v-else-if="counter % 3 == 1">v-else-if</h3>
     <h3 v-else>v-else</h3>
-    <button @click="handleToggle('counter')">counter++</button>
+    <Button @click="handleToggle('counter')">counter++</Button>
   </div>
   <!-- v-for example -->
   <div class="border">
@@ -84,7 +84,7 @@
   <div class="border">
     <h2>dynamic arguments example</h2>
     <span v-bind:[customArgument.bind]="customArgument.bindValue">check id on DOM</span> <br>
-    <button type="button" v-on:[customArgument.on]="handleClick()">Click me!</button>
+    <Button type="button" v-on:[customArgument.on]="handleClick()">Click me!</Button>
   </div>
 </template>
 
@@ -159,9 +159,4 @@ const customArgument = {
 </script>
 
 <style lang="scss" scoped>
-.border {
-  border: 1px solid black;
-  padding: 0.5rem;
-  margin-bottom: 1.5rem;
-}
 </style>

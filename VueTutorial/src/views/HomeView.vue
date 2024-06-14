@@ -34,6 +34,13 @@ const weekContents = [
       'Vue 內建元件',
     ]
   },
+  {
+    title: '第 3 週：UI庫、組合式 API 和組件通信',
+    li: [
+      'UI庫和其他npm工具',
+      '組合式 API(Composition API)核心',
+    ]
+  },
 ]
 </script>
 
