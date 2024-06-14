@@ -39,6 +39,7 @@ const weekContents = [
     li: [
       'UI庫和其他npm工具',
       '組合式 API(Composition API)核心',
+      '元件通信',
     ]
   },
 ]

@@ -32,3 +32,10 @@ Basically, we use new packages every week, so remember to run ***npm install*** 
 2. component lifecycle and hook
 3. dynamic components 
 4. build-in components
+
+### Week3
+**Overview**
+1. UI library (PrimeVue)
+2. Useful plugins for Vite
+3. Composition API & Responsive variable
+4. Data transfer between components
