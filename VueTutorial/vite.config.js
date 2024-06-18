@@ -41,6 +41,7 @@ export default defineConfig({
       { find: '@plugins', replacement: fileURLToPath(new URL('./src/assets/plugins', import.meta.url))},
       { find: '@style', replacement: fileURLToPath(new URL('./src/assets/style', import.meta.url))},
       { find: '@components', replacement: fileURLToPath(new URL('./src/components', import.meta.url))},
+      { find: '@store', replacement: fileURLToPath(new URL('./src/store', import.meta.url))},
     ],
   },
 })

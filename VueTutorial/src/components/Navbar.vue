@@ -34,12 +34,29 @@ const items = ref([
         label: 'Week3',
         items: [
             {
-                label: 'CompositionAPI_Example',
+                label: 'CompositionAPI',
                 route: { name: 'CompositionAPI_Example' }
             },
             {
-                label: 'PassValue_Example',
+                label: 'PassValue Example',
                 route: { name: 'PassValue_Example' }
+            },
+        ]
+    },
+    {
+        label: 'Week4',
+        items: [
+            {
+                label: 'Axios',
+                route: { name: 'Axios_Example' }
+            },
+            {
+                label: 'Pinia',
+                route: { name: 'Pinia_Example' }
+            },
+            {
+                label: 'Pinia State',
+                route: { name: 'Pinia_Readonly' }
             },
         ]
     },

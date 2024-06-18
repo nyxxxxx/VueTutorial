@@ -48,6 +48,32 @@ const routes = [
     ],
   },
   {
+    path: "/week2",
+    name: "Week2",
+    component: () => import("../views/Week2View.vue"),
+    meta: {
+      title: "Week2 Example",
+    },
+    children: [
+      {
+        path: "first",
+        name: "nested-first",
+        component: () => import("../views/Week2/ChildrenView1.vue"),
+        meta: {
+          title: "嵌套路由Example",
+        },
+      },
+      {
+        path: "second",
+        name: "nested-second",
+        component: () => import("../views/Week2/ChildrenView2.vue"),
+        meta: {
+          title: "嵌套路由Example",
+        },
+      },
+    ],
+  },
+  {
     path: "/week3",
     name: "Week3",
     component: () => import("../views/Week3View.vue"),
@@ -75,30 +101,39 @@ const routes = [
     ]
   },
   {
-    path: "/week2",
-    name: "Week2",
-    component: () => import("../views/Week2View.vue"),
+    path: "/week4",
+    name: "Week4",
+    component: () => import("../views/Week4View.vue"),
     meta: {
-      title: "Week2 Example",
+      title: "Week4 Example",
     },
+    redirect: to =>{ return {name: 'CompositionAPI_Example'}},
     children: [
       {
-        path: "first",
-        name: "nested-first",
-        component: () => import("../views/Week2/ChildrenView1.vue"),
+        path: "axios",
+        name: "Axios_Example",
+        component: () => import("../views/Week4/Axios_ExampleView.vue"),
         meta: {
-          title: "嵌套路由Example",
+          title: "Axios Example",
         },
       },
       {
-        path: "second",
-        name: "nested-second",
-        component: () => import("../views/Week2/ChildrenView2.vue"),
+        path: "pinia",
+        name: "Pinia_Example",
+        component: () => import("../views/Week4/Pinia_ExampleView.vue"),
         meta: {
-          title: "嵌套路由Example",
+          title: "Pinia Example",
         },
       },
-    ],
+      {
+        path: "readonly",
+        name: "Pinia_Readonly",
+        component: () => import("../views/Week4/Pinia_ReadonlyView.vue"),
+        meta: {
+          title: "Pinia State",
+        },
+      },
+    ]
   },
   {
     path: "/about",

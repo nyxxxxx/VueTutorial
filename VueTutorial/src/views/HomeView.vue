@@ -42,6 +42,13 @@ const weekContents = [
       '元件通信',
     ]
   },
+  {
+    title: '第 4 週： Axios & Pinia',
+    li: [
+      '串接 API 的 npm 套件: Axios',
+      '全域管理工具核心 - Pinia',
+    ]
+  },
 ]
 </script>
 
